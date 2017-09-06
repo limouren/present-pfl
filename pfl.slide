@@ -1,0 +1,78 @@
+Functional Programming
+:D
+15:04 25 Aug 2017
+Tags: pure, functional, programming
+
+Kenji Pa
+
+* What is functional programming?
+
+Woo, it is a difficult question at a time even [[https://docs.oracle.com/javase/8/docs/api/java/util/function/package-summary.html][Java has Functional Interface]]. For me, functional programming is what:
+
+1. Emphasize immutable data and program by data transformation
+2. Focus on how to build software by combining function
+3. Mathematics! Mathematics! Mathematics! (lambda calculus)
+
+* What is functional programming? (Cont.)
+
+There are mainly two camps of FP:
+
+1. Impure: allow side-effects in function (e.g. erlang, clojure)
+2. Pure: NOT allow side-effects in function (e.g. haskell, purescript)
+
+Purely functional programming is often termed more difficult to learn, so we are going centralize future discussion on it.
+
+* What makes ones want to learn functional programming?
+
+* tl;dr
+
+.image trendy.png
+
+* Okay just kidding
+
+* Why (purely) FP
+
+Many people said many things on it. For example:
+
+- Type safety
+  - If it compiles, it runs
+- Code reuse
+- More readable code (*Well, for those who knows FP*)
+
+For me, because it makes you a better programmer.
+
+- You learn a lots on programming! Endless concept to explore!
+- Think functional, write procedural
+  - Know more paradigms in solving problem, and apply them back into procedual code
+- Understanding on side-effect greatly enhanced.
+- Better analytics skill. Well you have gone through those difficult concepts...
+
+* I want to learn some FP!
+
+No problem! Let's learn some Haskell!
+
+* Let's write some functions
+
+Here is a function which add 1 to any integer supplied:
+
+  addOne:: Int -> Int
+  addOne x = x + 1
+
+This line is function declaration:
+
+  addOne:: Int -> Int
+
+The function body is obvious:
+
+  addOne x = x + 1
+
+* Let's write some functions (Cont.)
+
+Now can you read this function declaration?
+
+  add :: Int -> Int -> Int
+  add x y = x + y
+
+* Function composition
+
+
